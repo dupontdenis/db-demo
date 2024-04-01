@@ -9,7 +9,7 @@ async function main() {
         name: String
     });
 
-    const Pers = mongoose.model('Pers', persSchema);
+    const Pers = mongoose.model('Person', persSchema);
       
     async function create() {
         const query = await axios.get("https://randomuser.me/api/?results=1");
